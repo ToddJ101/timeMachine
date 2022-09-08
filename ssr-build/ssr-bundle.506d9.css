@@ -1,0 +1,225 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background: #FAFAFA;
+	font-family: 'Helvetica Neue', arial, sans-serif;
+	font-weight: 400;
+	color: #444;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#app {
+	height: 100%;
+}
+
+.header__OVZyn {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 56px;
+	padding: 0;
+	background: #673AB7;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	z-index: 50;
+}
+
+.header__OVZyn h1 {
+	float: left;
+	margin: 0;
+	padding: 0 15px;
+	font-size: 24px;
+	line-height: 56px;
+	font-weight: 400;
+	color: #FFF;
+}
+
+.header__OVZyn nav {
+	float: right;
+	font-size: 100%;
+}
+
+.header__OVZyn nav a {
+	display: inline-block;
+	height: 56px;
+	line-height: 56px;
+	padding: 0 15px;
+	min-width: 50px;
+	text-align: center;
+	background: rgba(255,255,255,0);
+	text-decoration: none;
+	color: #FFF;
+	will-change: background-color;
+}
+
+.header__OVZyn nav a:hover,
+.header__OVZyn nav a:active {
+	background: rgba(0,0,0,0.2);
+}
+
+.header__OVZyn nav a.active__r\+Z6z {
+	background: rgba(0,0,0,0.4);
+}
+
+.container__u2Tbw {
+	padding-top: 40px;
+	min-height: 100%;
+	width: 100%;
+}
+
+.container__7Aj5E {
+	width: 100%;
+	margin-top: 60px;
+}
+
+
+.clockContainer__7VL3k {
+	position: relative;
+	height: 20vw;
+	/*to make the height and width responsive*/
+	width: 20vw;
+	background: url(/0c1e45d53b3255405f1a84f18153721e.png) no-repeat;
+	/*setting our background image*/
+	background-size: 100%;
+}
+
+.hour__3Niq1,
+.minute__VXPtJ,
+.second__zDuaY {
+	position: absolute;
+	background: black;
+	border-radius: 10px;
+	-webkit-transform-origin: bottom;
+	    -ms-transform-origin: bottom;
+	        transform-origin: bottom;
+}
+
+.hour__3Niq1 {
+	width: 1.8%;
+	height: 25%;
+	top: 25%;
+	left: 48.85%;
+	opacity: 0.8;
+}
+
+.minute__VXPtJ {
+	width: 1.6%;
+	height: 30%;
+	top: 19%;
+	left: 48.9%;
+	opacity: 0.8;
+}
+
+.second__zDuaY {
+	width: 1%;
+	height: 40%;
+	top: 10%;
+	left: 49.25%;
+	opacity: 0.8;
+}
+.container__Bfh8q {
+	width: 25%;
+	margin-top: 60px;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+	border: solid 1px gray;
+	border-radius: 4px;
+	padding: 10px;
+	background-color: #e6e6e6;
+}
+
+.stopwatchDisplay__Yd3Dh {
+	-ms-flex-item-align: center;
+	    align-self: center;
+	border: 1px solid gray;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	padding: 10px;
+	border-radius: 4px;
+	background-color: lightgray;
+	margin: 10px;
+}
+.controls__k665q {
+	-ms-flex-item-align: center;
+	    align-self: center;
+}
+
+button {
+  -webkit-appearance: button;
+          appearance: button;
+  background-color: #d61838;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  transition: -webkit-filter .2s;
+  transition: filter .2s;
+  transition: filter .2s, -webkit-filter .2s;
+  -ms-user-select: none;
+      user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: auto;
+}
+
+button:after {
+  background-clip: padding-box;
+  background-color: #e25f5f;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+button:main,
+button:focus {
+  -webkit-user-select: auto;
+      -ms-user-select: auto;
+          user-select: auto;
+}
+
+button:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+button:disabled {
+  cursor: auto;
+}
+
+/*# sourceMappingURL=ssr-bundle.506d9.css.map*/
