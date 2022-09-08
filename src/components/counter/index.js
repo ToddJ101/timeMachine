@@ -16,7 +16,7 @@ class Clock extends Component {
   }
 
   render() {
-    console.log(this.state);
+    // console.log(this.state);
     let date = new Date(this.state.time).toDateString();
     let time = new Date(this.state.time).toLocaleTimeString();
     let hourRaw = new Date(this.state.time).getHours();
@@ -26,14 +26,14 @@ class Clock extends Component {
     let min = 6 * minRaw;
     let sec = 6 * secRaw;
     
-    console.log('this.state.time: ', this.state.time);
-    console.log('hour: ', hour);
-    console.log('min: ', min);
-    console.log('sec: ', sec);
+    // console.log('this.state.time: ', this.state.time);
+    // console.log('hour: ', hour);
+    // console.log('min: ', min);
+    // console.log('sec: ', sec);
     
     return (
       <>
-        <div class={style.home} >
+        <div class={style.container} >
           <div class={style.clockContainer}>
             <div class={style.hour} style={`transform: rotate(${hour}deg);`} />
             <div class={style.minute} style={`transform: rotate(${min}deg);`} />
